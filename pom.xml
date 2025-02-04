@@ -96,14 +96,14 @@
 	
 	    <repository>
 	      <id>nexus</id>
-	      <name>Mithun Technologies Releases Nexus Repository</name>
-	      <url>http://172.31.2.244:9000/nandinitech/repository/facebook-release/</url>
+	      <name>Facebook Releases Nexus Repository</name>
+	      <url>http://172.31.46.125:9000/nandini/repository/facebook-release/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
-	      <name>Mithun Technologies Snapshot Nexus Repository </name>
-	      <url>http://172.31.2.244:9000/nandinitech/repository/facebook-snapshot/</url>
+	      <name>Facebook Snapshot Nexus Repository</name>
+	      <url>http://172.31.46.125:9000/nandini/repository/facebook-snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
