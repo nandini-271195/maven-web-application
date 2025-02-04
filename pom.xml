@@ -27,6 +27,12 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
 	</properties>
+         <repositories>
+              <repository>
+                   <id>nexus</id>
+                   <url>http://172.31.46.125:8081/nandini/repository/mssgrouprepo/</url>
+              </repository>
+         </repositories>
 
 	<dependencies>
 		
