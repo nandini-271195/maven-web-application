@@ -1,6 +1,6 @@
 node{
   
-  def mavenHome = tool name: 'maven 3.9.5'  
+  def mavenHome = tool name: 'maven3.9.9'  
   
   echo "Node name is: ${env.NODE_NAME}"
   echo "Job name is: ${env.JOB_NAME}"
@@ -8,8 +8,8 @@ node{
   
   stage('CheckoutCode')
   {
-    git branch: 'development', credentialsId: 'edad5bc0-51c9-41ce-a733-62e66bcf9d6e', url: 
-	'https://github.com/nandinipavi/maven-web-application.git'
+    git branch: 'development', credentialsId: '290a0094-f359-4cea-a7b3-932257bd1d37', url: 
+	'https://github.com/nandini-271195/maven-web-application.git'
   }
   stage('Build')
   {
@@ -26,8 +26,8 @@ node{
   }
   stage('DeployAppIntoTomcatServer')
   {
-  sshagent(['eb9f9aab-2c91-489f-87c8-9223334e73da']) {
-    sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@172.31.0.196:/opt/apache-tomcat-9.0.80/webapps/"
+  sshagent(['1ef78899-d640-4464-89e0-397afe315f21']) {
+    sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@172.31.1.159:/opt/apache-tomcat-9.0.98/webapps/"
    }
   }
   */
